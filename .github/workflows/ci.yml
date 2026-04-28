@@ -32,6 +32,7 @@ jobs:
         run: |
           pip install semgrep --break-system-packages
           semgrep --config=auto
+          ~./local/bin/semgrep --configure=auto
 
       - name: Escaneo de dependencias
         run: npm audit || true
