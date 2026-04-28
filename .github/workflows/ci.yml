@@ -31,7 +31,6 @@ jobs:
       - name: SAST con Semgrep
         run: |
           pip install semgrep --break-system-packages
-          semgrep --config=auto
           ~/.local/bin/semgrep --config=auto
 
       - name: Escaneo de dependencias
